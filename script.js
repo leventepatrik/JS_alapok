@@ -4,23 +4,24 @@ window.addEventListener("load", function () {
     elemekElerese3();
     elemekElerese4();
     elemFormazas();
+    esemenyKezeles1();
 });
 
 function elemekElerese1() {
     /**Ide jön az első feladat */
-    const ELEM1=document.querySelectorAll("section h2")[0];
+    const ELEM1 = document.querySelectorAll("section h2")[0];
     console.log(ELEM1.innerHTML)
 
 }
 function elemekElerese2() {
     /**Ide jön az 2.  feladat */
-    const ELEM2=document.querySelectorAll("#ide")[0];
-    ELEM2.innerHTML="<p> Jó reggelt ! </p>";
-    
+    const ELEM2 = document.querySelectorAll("#ide")[0];
+    ELEM2.innerHTML = "<p> Jó reggelt ! </p>";
+
 }
 function elemekElerese3() {
-    const ELEM3=document.querySelectorAll(".ide")[0];
-    ELEM3.innerHTML="<p>Jó reggelt ! </p>";
+    const ELEM3 = document.querySelectorAll(".ide")[0];
+    ELEM3.innerHTML = "<p>Jó reggelt ! </p>";
 }
 
 function elemekElerese4() {
@@ -41,11 +42,24 @@ function elemekElerese4() {
 function elemFormazas() {
     const ELEM = document.querySelectorAll(".lista")[0];
     ELEM.classList.add("formazott");
-    
+
 }
 
-function esemenyKezeles(){
+function esemenyKezeles1() {
+    const ELEM = document.querySelectorAll(".lista")[0]
+    ELEM.addEventListener("click", katt)
+    console.log(ELEM)
+    function katt() {
+        const ELEM2 = document.querySelector(".kattintasutan")
+        console.log(ELEM2)
+        ELEM2.innerHTML= ELEM.innerHTML;
+
+    }
 
 
+}
+function esemenyKezeles2(){
+    const ELEM=document.querySelectorAll(".feladat")[0]
+    
 
 }
