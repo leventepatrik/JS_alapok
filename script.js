@@ -9,14 +9,14 @@ window.addEventListener("load", function () {
 
 function elemekElerese1() {
     /**Ide jön az első feladat */
-    const ELEM1 = document.querySelectorAll("section h2")[0];
+    const ELEM1 =$("section h2")
     console.log(ELEM1.innerHTML)
 
 }
 function elemekElerese2() {
     /**Ide jön az 2.  feladat */
-    const ELEM2 = document.querySelectorAll("#ide")[0];
-    ELEM2.innerHTML = "<p> Jó reggelt ! </p>";
+    const ELEM2 =$("#ide")
+    ELEM2.eq(0).html( `<p>Jó reggelt !</p>`)
 
 }
 function elemekElerese3() {
